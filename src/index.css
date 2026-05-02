@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-rose-50: #fff1f2;
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-800: #9f1239;
+  --color-rose-900: #881337;
+  --color-elegant-dark: #1c1917;
+  --color-elegant-light: #fafaf9;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-elegant-light);
+  color: var(--color-elegant-dark);
+}
+
+/* For iPhone 14 Pro Max specific responsive adjustments or hidden scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
